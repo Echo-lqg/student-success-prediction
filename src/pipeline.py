@@ -16,8 +16,8 @@ from typing import Any
 from src.data_loader import load_student_dataset
 from src.error_analysis import run_error_analysis
 from src.explainability import explain_single_case, global_feature_importance
-from src.modeling import train_and_compare_models
 from src.recommender import generate_recommendations
+from src.train import train_and_compare_models
 
 logger = logging.getLogger(__name__)
 

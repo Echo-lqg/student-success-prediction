@@ -48,15 +48,28 @@ student-success-prediction/
 │   ├── __init__.py
 │   ├── data_loader.py
 │   ├── error_analysis.py
+│   ├── evaluate.py
 │   ├── explainability.py
-│   ├── modeling.py
+│   ├── model.py
 │   ├── pipeline.py
-│   └── recommender.py
+│   ├── recommender.py
+│   └── train.py
 ├── .gitignore
 ├── main.py
 ├── requirements.txt
 └── README.md
 ```
+
+## Model
+
+- **Logistic Regression** — modèle linéaire interprétable, favorise le rappel grâce à `class_weight="balanced"`
+- **Random Forest** — ensemble non linéaire pour capturer les interactions entre variables
+
+## Evaluation
+
+- **F1-score** — équilibre entre précision et rappel
+- **ROC-AUC** — qualité du classement indépendante du seuil de décision
+- **Confusion matrix** — décomposition TP / FP / FN / TN pour chaque modèle
 
 ## Jeu de données
 
